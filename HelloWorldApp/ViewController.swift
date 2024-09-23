@@ -13,12 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Hello, world!")
+        label.isHidden = true
     }
 
 
     @IBAction func makeSomeGreeting(_ sender: Any) {
-        
+        label.text = "Hello World"
+        label.isHidden = false
     }
 }
 
